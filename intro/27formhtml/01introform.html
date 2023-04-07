@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>form in html</h2>
+    <p>. The &lt;form&gt; tag is used to create an HTML form for user input.</p>
+    <p>getting information from uer and send it to user</p>
+
+    <p>there are two type of method</p>
+    <ol TYPE="1">
+        <li>GET</li>
+        <LI>POST</LI>
+    </ol>
+    <H2>GET:-</H2>
+    <UL type="a">
+        <LI>GET will be sending form data using the URL</li>
+            <li>GET will append data to url using ? = query string and key=value&key=value</li>
+            <li>GET method is less secure because its shows form data in url</li>
+            <li>GET method have limitation of 2048 char only 1024 bites</li>
+            <li>GET method doesnt support file uploading</li>
+            <li>GET method help to get data back after refreshing or reloading</li>
+            <li>GET method data will be bookmarked</li>
+            <li>GET method is fater than post</li>
+            <li>GET method preferrable while searching</li>
+    </UL>
+    <form method="get">
+        <input type="text" name="username" id="username">
+        <input type="password" name="password" id="password">
+        <input type="submit" name="btn" id="btn">
+    </form>
+    <p>FOR EXAMPLE:file:///C:/Users/tops/Desktop/intro/01introform.html?username=aqsa&password=aqaswdw&btn=Submit</p>
+    <h2>post:-</h2>
+    <ul type="">
+        <li>POST will be sending form data without using the URL</li>
+        <li>POST method is secure because its not sending data by URL</li>
+        <li>There is no limitation for POST method for seding data to the server</li>
+        <li>POST method support file uploading</li>
+        <li>while file uploading we must required to add enctype="multipart/form-data" attr</li>
+        <li>we are not getting data after refreshing/realoading our page in POST method </li>
+        <li>wnt able to do bookmarked post method form data</li>
+        <li>POST method is slower than get</li>
+        <li>POST method preferrable while securely sending data</li>
+    </ul>
+    <form method="post">
+        <input type="text" name="username" id="username">
+        <input type="password" name="password" id="password">
+        <input type="submit" name="btn" id="btn">
+    </form>
+    <h3>FILE</h3>
+    <p>the user choose one or more files from their device storage. Once chosen, the files can be uploaded to a server using form submission, </p>
+    <p>enctype="multipart/form-data"</p>
+    <input type="username" name="username" id="username">
+    <input type="password" name="password" id="password">
+    <input type="file" name="profile_pic" id="profile_pic" accept="image">
+    <input type="submit" name="btn" id="btn">
+
+    <h3>VALIDATION</h3>
+    <P>Data validation is the process of ensuring that user input is clean, correct, and useful</P>
+    <p>PATTERN</p>
+    <input type="username" placeholder="username" name="username" id="username" required>
+    <input type="password" placeholder="password" name="password" id="password" required>
+    <input type="email" placeholder="email" title="invalid email" name="password" id="password" required>
+    <input placeholder="Input Txt Pattern Email" type="text" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-zA-Z]{2,4}" title="Invalid email address" name="password" id="password"> 
+    
+    <input type="file" name="profile_pic" id="profile_pic" accept="image/*">
+    <input type="submit" name="btn" id="btn">
+    <h3>attributes:</h3>
+    <P> a quality, character, or characteristic ascribed to someone or something. </P>
+    <img src="./img/formattributes.jpg" width="500px" alt=""><br>
+<img src="./img/inputatt.jpg" width="500px" alt=""><br>    
+
+</body>
+</html>
